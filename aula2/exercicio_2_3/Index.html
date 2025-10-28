@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <h1>Cadastro de Funcionários</h1>
+    <form action="respostaForm.html" method="post">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="Name">Nome:</label><input type="text" required pattern="[a-z-A-Z]+" size="35" maxlength="100" id="Name" name="nome"
+                placeholder="Nome Completo"><br>
+            <label for="Email">Email:</label><input type="email" required size="35" id="Email" name="email"
+                placeholder="exemplo@gmail.com"><br>
+            <label for="Prof">Profissão:</label><input type="text" required size="32" id="Prof" name="Profissão"
+                placeholder="Sua Profissão"><br>
+            <label for="Dat_Nasc">Data de Nascimento:</label><input type="date" required id="Dat_Nasc" name="Nascimento"
+                placeholder="dd/mm/aaaa"><br>
+            <label for="Age">Idade:</label> <input type="number" size="10" id="age" name="Idade"
+                placeholder="Sua Idade"><br>
+
+        </fieldset>
+        <fieldset>
+            <legend>Endereço</legend>
+            <label for="Cit">Cidade:</label><input type="text" size="21" required id="Cit" name="Cidade"
+                placeholder="Porto Alegre"><br>
+            <label for="Str">Rua:</label><input type="text" size="24" required id="Str" name="Rua"
+                placeholder="Sua Rua"><br>
+            <label for="Num">Número:</label><input type="number" size="11" required id="Num" nome="Numero"
+                placeholder="Num Moradia"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Cadastro Usuario</legend>
+            <label>Tipo de Acesso</label><br>
+            <select name="typacess">
+                <option>Escolha</option>
+                <option>Usuario</option>
+                <option>AdmynLocal</option>
+                <option>Administrador</option>
+            </select><br>
+            <label for="Password">Senha</label> <input type="password" size="22" required id="Password"
+                name="Senha" placeholder="Exemplo123"><br>
+            <label for="User">Usuário</label> <input type="text" required id="User" name="Usuario" placeholder="Nome Usuario"><br>
+        </fieldset>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Redefinir">
+    </form>
+</body>
+</html>
